@@ -1,0 +1,58 @@
+header {
+  padding: 20px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  width: 150px;
+  mix-blend-mode: multiply;
+}
+nav {
+  display: flex;
+  margin-top: 10px;
+  list-style: none;
+  gap: 20px;
+  color: #49557e;
+  font-size: 18px;
+  cursor: pointer;
+}
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  position: relative;
+}
+.nav-right .icon {
+  font-size: 22px;
+}
+.nav-right button {
+  background: transparent;
+  font-size: 15px;
+  color: #49557e;
+  border: 1px solid #f95017;
+  padding: 10px 30px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.nav-right button:hover {
+  background-color: #f95017;
+  color: white;
+}
+.active {
+  padding-bottom: 2px;
+  border-bottom: 2px solid #f95017;
+}
+.dot {
+  position: absolute;
+  min-width: 8px;
+  min-height: 8px;
+  border-radius: 5px;
+  background-color: #f95017;
+  color: white;
+  padding: 2px;
+  top: 0px;
+  right: 118px;
+  /* font-size: 15px; */
+}
