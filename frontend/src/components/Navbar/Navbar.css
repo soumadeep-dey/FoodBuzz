@@ -1,8 +1,8 @@
 header {
-  padding: 20px 0px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 20px 0px;
 }
 .logo {
   width: 150px;
@@ -15,17 +15,16 @@ nav {
   gap: 20px;
   color: #4b5563;
   font-size: 18px;
+}
+nav li {
   cursor: pointer;
 }
 .nav-right {
   display: flex;
   align-items: center;
-  gap: 20px;
-  position: relative;
+  gap: 30px;
 }
-.nav-right .icon {
-  font-size: 22px;
-}
+
 .nav-right button {
   background: transparent;
   font-size: 15px;
@@ -44,15 +43,19 @@ nav {
   padding-bottom: 2px;
   border-bottom: 2px solid #f95017;
 }
+.navbar-search-icon {
+  position: relative;
+  cursor: pointer;
+}
 .dot {
   position: absolute;
-  min-width: 8px;
-  min-height: 8px;
+  min-width: 10px;
+  min-height: 10px;
   border-radius: 5px;
   background-color: #f95017;
-  color: white;
-  padding: 2px;
-  top: 0px;
-  right: 118px;
-  /* font-size: 15px; */
+  top: -8px;
+  right: -8px;
+}
+.icon {
+  width: 25px;
 }

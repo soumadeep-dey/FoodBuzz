@@ -4,7 +4,7 @@ import { assets } from "../../assets/frontend_assets/assets";
 
 const Navbar = () => {
   const [selectedMenu, setSelectedMenu] = useState("home");
-  
+
   return (
     <header>
       <img src={assets.logo_banner} alt="" className="logo" />
@@ -35,9 +35,11 @@ const Navbar = () => {
         </li>
       </nav>
       <div className="nav-right">
-        <assets.search_icon className="icon" />
-        <assets.cart_icon className="icon" />
-        <div className="dot"></div>
+        <img src={assets.search_icon} alt="search-icon" className="icon" />
+        <div className="navbar-search-icon">
+          <img src={assets.basket_icon} alt="basket-icon" className="icon" />
+          <div className="dot"></div>
+        </div>
         <button>Sign in</button>
       </div>
     </header>
