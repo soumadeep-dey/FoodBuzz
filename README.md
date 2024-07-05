@@ -1,8 +1,5 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Fullstack Task Management Application
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![React.js](https://img.shields.io/badge/Frontend-React.js-61DAFB) ![React Hooks](https://img.shields.io/badge/Hooks-React_Hooks-BBE9FF) ![CSS](https://img.shields.io/badge/CSS_framework-CSS-274de5)
+![Node.js](https://img.shields.io/badge/JS_Env-Node.js-5FA04E) ![Express.js](https://img.shields.io/badge/Framework-Express.js-blue) ![MongoDB](https://img.shields.io/badge/Database-MongoDB-237a3b) ![Mongoose](https://img.shields.io/badge/ODM-Mongoose-darkred) ![Postman](https://img.shields.io/badge/API_Testing-Postman-FF7F3E)  ![CORS](https://img.shields.io/badge/CORS-cors-FFF5E1) ![Vercel](https://img.shields.io/badge/Deployement-Vercel-black)
