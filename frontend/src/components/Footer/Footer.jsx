@@ -6,7 +6,7 @@ const Footer = () => {
     <footer>
       <div className="footer-content">
         <div className="footer-content-left">
-          <img src={assets.logo_banner} alt="logo" id="logo" />
+          <img src={assets.logo_banner_dark} alt="logo" id="logo" />
           <p>
             Choose from a diverse menu featuring a delectable array of dishes
             crafted with the finest ingredients and culinary expertise. Our

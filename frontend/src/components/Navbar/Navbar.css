@@ -3,6 +3,9 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 20px 0px;
+  /* min-height: 100vh; */
+  width: 90%;
+  margin: auto;
 }
 .logo {
   width: 150px;
