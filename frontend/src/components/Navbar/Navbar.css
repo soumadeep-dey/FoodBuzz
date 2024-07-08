@@ -3,7 +3,6 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 20px 0px;
-  /* min-height: 100vh; */
   width: 90%;
   margin: auto;
 }
@@ -61,4 +60,80 @@ nav li {
 }
 .icon {
   width: 25px;
+}
+/* Media Query:
+- xs, extra-small: 0px
+- sm, small: 600px
+- md, medium: 900px
+- lg, large: 1200px
+- xl, extra-large: 1440px
+*/
+/* For any above 1024 (xl+) */
+@media (min-width: 1200px) {
+  header .logo {
+    width: 190px;
+  }
+  nav {
+    gap: 25px;
+    font-size: 22px;
+  }
+  .navbar-right {
+    gap: 40px;
+  }
+  .icon {
+    width: 30px;
+  }
+  .nav-right button {
+    padding: 10px 35px;
+    font-size: 18px;
+  }
+}
+/* For Desktop: 1200px (lg) */
+@media (max-width: 1200px) {
+  header .logo {
+    width: 150px;
+  }
+  nav {
+    gap: 20px;
+    font-size: 18px;
+  }
+  .navbar-right {
+    gap: 30px;
+  }
+  .icon {
+    width: 25px;
+  }
+  .nav-right button {
+    padding: 10px 30px;
+    font-size: 15px;
+  }
+}
+/* For tablet: 900px (md) */
+@media (max-width: 900px) {
+  header .logo {
+    width: 120px;
+  }
+  nav {
+    gap: 20px;
+    font-size: 18px;
+  }
+  .nav-right {
+    gap: 20px;
+  }
+  .icon {
+    width: 21px;
+  }
+  .nav-right button {
+    padding: 7px 20px;
+    font-size: 15px;
+  }
+}
+/* For mobile: 750px (sm) */
+@media (max-width: 750px) {
+  nav {
+    display: none;
+  }
+  .nav-right {
+    gap: 17px;
+  }
 }
