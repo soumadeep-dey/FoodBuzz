@@ -2,9 +2,15 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 0px;
-  width: 90%;
+  padding: 20px 30px;
+  width: 100%;
   margin: auto;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background: rgba(255, 255, 255, 0.924);
+  box-shadow: 0 1.4px 20px rgba(104, 103, 103, 0.114);
+  backdrop-filter: blur(10px);
 }
 .logo {
   width: 150px;
@@ -62,11 +68,10 @@ nav li {
   width: 25px;
 }
 /* Media Query:
-- xs, extra-small: 0px
-- sm, small: 600px
-- md, medium: 900px
-- lg, large: 1200px
-- xl, extra-large: 1440px
+- sm, mobile: 750px
+- md, tablet: 900px
+- lg, desktop: 1200px
+- xl, ultra-wide: 1440px
 */
 /* For any above 1024 (xl+) */
 @media (min-width: 1200px) {
