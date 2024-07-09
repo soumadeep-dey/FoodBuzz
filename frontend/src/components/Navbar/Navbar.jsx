@@ -3,7 +3,7 @@ import "./Navbar.css";
 import { assets } from "../../assets/frontend_assets/assets";
 import { Link } from "react-router-dom";
 
-const Navbar = () => {
+const Navbar = ({ setShowLogin }) => {
   const [selectedMenu, setSelectedMenu] = useState("home");
 
   return (
@@ -17,19 +17,22 @@ const Navbar = () => {
         >
           Home
         </Link>
-        <a href="#explore-menu"
+        <a
+          href="#explore-menu"
           onClick={() => setSelectedMenu("menu")}
           className={selectedMenu === "menu" ? "active" : ""}
         >
           Menu
         </a>
-        <Link to="/"
+        <Link
+          to="/"
           onClick={() => setSelectedMenu("orders")}
           className={selectedMenu === "orders" ? "active" : ""}
         >
           Orders
         </Link>
-        <a href="#footer"
+        <a
+          href="#footer"
           onClick={() => setSelectedMenu("contact-us")}
           className={selectedMenu === "contact-us" ? "active" : ""}
         >
@@ -42,7 +45,7 @@ const Navbar = () => {
           <img src={assets.basket_icon} alt="basket-icon" className="icon" />
           <div className="dot"></div>
         </div>
-        <button>Sign in</button>
+        <button onClick={() => setShowLogin(true)}>Sign in</button>
       </div>
     </header>
   );
