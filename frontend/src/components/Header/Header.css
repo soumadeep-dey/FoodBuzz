@@ -1,7 +1,7 @@
 .header-banner {
   height: 40vw;
   margin: 30px auto;
-  background: url("/jumbotron.png") no-repeat;
+  background: url("/header_img_blur.png") no-repeat;
   position: relative;
   background-size: contain;
 }
@@ -21,6 +21,7 @@
   font-weight: 500;
   color: white;
   font-size: max(4.5vw, 22px);
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
 }
 .header-contents p {
   color: white;
