@@ -52,3 +52,19 @@ footer hr {
   background-color: grey;
   border: none;
 }
+/* Media Query:
+- sm, mobile: 750px
+- md, tablet: 900px
+- lg, desktop: 1200px
+- xl, ultra-wide: 1440px
+*/
+@media (max-width: 750px) {
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+  }
+  .footer-copyright {
+    text-align: center;
+  }
+}
