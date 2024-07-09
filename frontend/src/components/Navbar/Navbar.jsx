@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Navbar.css";
 import { assets } from "../../assets/frontend_assets/assets";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [selectedMenu, setSelectedMenu] = useState("home");
@@ -9,30 +10,31 @@ const Navbar = () => {
     <header>
       <img src={assets.logo_banner} alt="" className="logo" />
       <nav>
-        <li
+        <Link
+          to="/"
           onClick={() => setSelectedMenu("home")}
           className={selectedMenu === "home" ? "active" : ""}
         >
           Home
-        </li>
-        <li
+        </Link>
+        <a href="#explore-menu"
           onClick={() => setSelectedMenu("menu")}
           className={selectedMenu === "menu" ? "active" : ""}
         >
           Menu
-        </li>
-        <li
-          onClick={() => setSelectedMenu("mobile-app")}
-          className={selectedMenu === "mobile-app" ? "active" : ""}
+        </a>
+        <Link to="/"
+          onClick={() => setSelectedMenu("orders")}
+          className={selectedMenu === "orders" ? "active" : ""}
         >
-          Mobile App
-        </li>
-        <li
+          Orders
+        </Link>
+        <a href="#footer"
           onClick={() => setSelectedMenu("contact-us")}
           className={selectedMenu === "contact-us" ? "active" : ""}
         >
           Contact Us
-        </li>
+        </a>
       </nav>
       <div className="nav-right">
         <img src={assets.search_icon} alt="search-icon" className="icon" />

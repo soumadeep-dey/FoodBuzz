@@ -3,7 +3,7 @@ import "./Footer.css";
 
 const Footer = () => {
   return (
-    <footer>
+    <footer id="footer">
       <div className="footer-content">
         <div className="footer-content-left">
           <img src={assets.logo_banner_dark} alt="logo" id="logo" />

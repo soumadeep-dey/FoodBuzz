@@ -5,6 +5,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family: Outfit, Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth;
 }
 main {
   min-height: 100vh;
