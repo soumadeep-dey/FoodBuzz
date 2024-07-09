@@ -35,3 +35,28 @@
   font-size: max(1vw, 13px);
   border-radius: 50px;
 }
+/* Media Query:
+- sm, mobile: 750px
+- md, tablet: 900px
+- lg, desktop: 1200px
+- xl, ultra-wide: 1440px
+*/
+@media (max-width: 1200px) {
+  .header-banner {
+    height: 38vw;
+  }
+  .header-contents {
+    max-width: 45%;
+  }
+}
+@media (max-width: 750px) {
+  .header-contents {
+    max-width: 55%;
+  }
+  .header-contents p {
+    display: none;
+  }
+  .header-contents button {
+    margin-top: 2vw;
+  }
+}
