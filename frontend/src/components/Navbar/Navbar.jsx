@@ -28,13 +28,13 @@ const Navbar = ({ setShowLogin }) => {
         >
           Menu
         </a>
-        <Link
-          to="/order"
-          onClick={() => setSelectedMenu("orders")}
-          className={selectedMenu === "orders" ? "active" : ""}
+        <a
+          href="#app-download"
+          onClick={() => setSelectedMenu("mobile-app")}
+          className={selectedMenu === "mobile-app" ? "active" : ""}
         >
-          Orders
-        </Link>
+          Mobile App
+        </a>
         <a
           href="#footer"
           onClick={() => setSelectedMenu("contact-us")}
