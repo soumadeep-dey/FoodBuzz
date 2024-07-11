@@ -8,7 +8,9 @@ const Navbar = ({ setShowLogin }) => {
 
   return (
     <header>
-      <img src={assets.logo_banner} alt="" className="logo" />
+      <Link to="/">
+        <img src={assets.logo_banner} alt="" className="logo" />
+      </Link>
       <nav>
         <Link
           to="/"
@@ -25,7 +27,7 @@ const Navbar = ({ setShowLogin }) => {
           Menu
         </a>
         <Link
-          to="/"
+          to="/order"
           onClick={() => setSelectedMenu("orders")}
           className={selectedMenu === "orders" ? "active" : ""}
         >
@@ -42,7 +44,7 @@ const Navbar = ({ setShowLogin }) => {
       <div className="nav-right">
         <img src={assets.search_icon} alt="search-icon" className="icon" />
         <div className="navbar-search-icon">
-          <img src={assets.basket_icon} alt="basket-icon" className="icon" />
+          <Link to="/cart"><img src={assets.basket_icon} alt="basket-icon" className="icon" /></Link>
           <div className="dot"></div>
         </div>
         <button onClick={() => setShowLogin(true)}>Sign in</button>

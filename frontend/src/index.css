@@ -8,7 +8,7 @@
   scroll-behavior: smooth;
 }
 main {
-  min-height: 100vh;
+  /* min-height: 100vh; */
   width: 95%;
   margin: auto;
 }
