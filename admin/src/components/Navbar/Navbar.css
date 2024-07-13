@@ -1,0 +1,14 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 4%;
+  /* margin-top: 10px; */
+}
+nav .logo {
+  width: max(18%, 180px);
+  mix-blend-mode: multiply;
+}
+nav .profile-img {
+  width: 50px;
+}
