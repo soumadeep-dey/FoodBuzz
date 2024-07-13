@@ -29,5 +29,18 @@ const foodController = {
       res.status(500).json({ success: false, message: error.message });
     }
   },
+  // remove food item
+  removeFood: async (req, res) => {
+    const foodId = req.body.id;
+    try {
+      const food = await foodModel.findById(foodId);
+      fs.unlink(`uploads/${food.image}`, () => {});
+      await foodModel.findByIdAndDelete(foodId);
+
+      res.status(201).json({ success: true, message: "Food item removed" });
+    } catch (error) {
+      res.status(500).json({ success: false, message: error.message });
+    }
+  },
 };
 export default foodController;
