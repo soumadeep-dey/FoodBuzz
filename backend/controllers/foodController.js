@@ -34,7 +34,9 @@ const foodController = {
     const foodId = req.body.id;
     try {
       const food = await foodModel.findById(foodId);
-      fs.unlink(`uploads/${food.image}`, () => {});
+      fs.unlink(`uploads/${food.image}`, (err) => {
+        if (err) console.error(`Failed to delete image: ${err.message}`);
+      });
       await foodModel.findByIdAndDelete(foodId);
 
       res.status(201).json({ success: true, message: "Food item removed" });

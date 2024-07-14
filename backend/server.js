@@ -23,7 +23,7 @@ app.get("/", (req, res) => {
 
 // api endpoints
 app.use("/api/food", foodRouter);
-app.use("/images", express.static("uploads"));
+app.use("/api/images", express.static("uploads"));
 
 app.listen(PORT, () => {
   console.log(`🛜  Server running on port: ${PORT}`);
