@@ -3,7 +3,7 @@ aside {
   min-height: 100vh;
   border: 1.5px solid #a9a9a9;
   border-top: 0;
-  font-size: max(1vw, 10px);
+  font-size: max(1vw, 12px);
 }
 .sidebar-options {
   padding-top: 50px;
@@ -20,6 +20,14 @@ aside {
   padding: 8px 10px;
   border-radius: 3px 0px 0px 3px;
   cursor: pointer;
+}
+.sidebar-option:hover { 
+  background-color: #e6e6e6;
+  transition: 0.3s;
+ }
+ .sidebar-option.active{
+  background-color: #fff0ed;
+  border-color: #fa4f16;
 }
 @media (max-width: 900px) {
   .sidebar-option p {
